@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/College-Tracker/static/css/main.c933eaca.css",
+    "main.js": "/College-Tracker/static/js/main.874d99ed.js",
+    "static/media/background-6.png": "/College-Tracker/static/media/background-6.50567f6c57f1cab9fa73.png",
+    "index.html": "/College-Tracker/index.html",
+    "main.c933eaca.css.map": "/College-Tracker/static/css/main.c933eaca.css.map",
+    "main.874d99ed.js.map": "/College-Tracker/static/js/main.874d99ed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c933eaca.css",
+    "static/js/main.874d99ed.js"
+  ]
+}
