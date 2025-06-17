@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/College-Tracker/static/css/main.c933eaca.css",
-    "main.js": "/College-Tracker/static/js/main.f439dc0c.js",
+    "main.js": "/College-Tracker/static/js/main.b9df1ce4.js",
     "static/media/background-6.png": "/College-Tracker/static/media/background-6.50567f6c57f1cab9fa73.png",
     "index.html": "/College-Tracker/index.html",
     "main.c933eaca.css.map": "/College-Tracker/static/css/main.c933eaca.css.map",
-    "main.f439dc0c.js.map": "/College-Tracker/static/js/main.f439dc0c.js.map"
+    "main.b9df1ce4.js.map": "/College-Tracker/static/js/main.b9df1ce4.js.map"
   },
   "entrypoints": [
     "static/css/main.c933eaca.css",
-    "static/js/main.f439dc0c.js"
+    "static/js/main.b9df1ce4.js"
   ]
 }
