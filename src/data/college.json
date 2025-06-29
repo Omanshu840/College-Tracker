@@ -1,0 +1,422 @@
+{
+    "colleges": [
+        {
+            "id": 1,
+            "name": "Cornell (Johnson)",
+            "country": "United States",
+            "logo": "https://pythagurus.in/wp-content/uploads/2023/05/cornell-university.jpg",
+            "courseLink": "https://www.johnson.cornell.edu/programs/full-time-mba/two-year-mba/",
+            "course": "Full Time MBA",
+            "duration": "2 Years",
+            "fee": "$86,596 per year",
+            "avgSalary": "$161,967",
+            "avgGMAT": 655,
+            "rank": 31,
+            "feeWaiverAvailable": true,
+            "applicationRequirements": [
+                "Completed application form",
+                "Official transcripts",
+                "Letters of recommendation",
+                "Personal statement",
+                "GMAT or GRE scores"
+            ],
+            "applicationDeadline": "September 18, 2024 (Round 1)",
+            "ieltsRequirement": 7.0,
+            "scholarshipOpportunities": [
+                "Need-based scholarships",
+                "Merit-based scholarships",
+                "Diversity scholarships"
+            ],
+            "upcomingEvents": [
+                {
+                    "name": "Virtual Information Session",
+                    "date": "July 15, 2025",
+                    "link": "https://www.hbs.edu/mba/admissions/events/"
+                }
+            ],
+            "classProfile": {
+                "numberEnrolled": 280,
+                "averageAge": 28,
+                "averageWorkExperience": 5.3
+            }
+        },
+        {
+            "id": 2,
+            "name": "Carnegie Mellon (Tepper)",
+            "country": "United States",
+            "logo": "https://ft-bschool-rankings.s3.eu-west-2.amazonaws.com/production/images/899ef553-fadd-4940-9246-8623a7510806-df75c72a1c5c3036064d2c975e23f4f1",
+            "courseLink": "https://www.cmu.edu/tepper/programs/mba/program-options/full-time.html",
+            "course": "Full Time MBA",
+            "duration": "2 years",
+            "fee": "$81,340 per year",
+            "avgSalary": "$151,215",
+            "avgGMAT": 645,
+            "rank": 42,
+            "feeWaiverAvailable": true,
+            "applicationRequirements": [
+                "Completed application form",
+                "Official transcripts",
+                "Letters of recommendation",
+                "Personal statement",
+                "GMAT or GRE scores"
+            ],
+            "applicationDeadline": "October 1, 2024 (Round 1)",
+            "ieltsRequirement": 7.0,
+            "scholarshipOpportunities": [
+                "Need-based scholarships",
+                "Merit-based scholarships"
+            ],
+            "upcomingEvents": [
+                {
+                    "name": "Open House",
+                    "date": "August 20, 2025",
+                    "link": "https://www.gsb.stanford.edu/programs/mba/admissions/events"
+                }
+            ],
+            "classProfile": {
+                "numberEnrolled": 156,
+                "averageAge": 29,
+                "averageWorkExperience": 6.3
+            }
+        },
+        {
+            "id": 3,
+            "name": "Georgia Tech (Schellar)",
+            "country": "United States",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1jr-ibhSCsQY9tdwqlDb5HxaBG6Go8-bzTQ&s",
+            "courseLink": "https://www.scheller.gatech.edu/explore-programs/mba-programs/full-time-mba/index.html",
+            "course": "Full Time MBA",
+            "duration": "2 years",
+            "fee": "$43,604 per year",
+            "avgSalary": "$146,260",
+            "avgGMAT": 635,
+            "rank": 50,
+            "feeWaiverAvailable": true,
+            "applicationRequirements": [
+                "Completed application form",
+                "Official transcripts",
+                "Letters of recommendation",
+                "Personal statement",
+                "SAT or ACT scores"
+            ],
+            "applicationDeadline": "October 1, 2025 (Round 1)",
+            "ieltsRequirement": 7.0,
+            "scholarshipOpportunities": [
+                "Need-based scholarships",
+                "Merit-based scholarships"
+            ],
+            "upcomingEvents": [
+                {
+                    "name": "Campus Tour",
+                    "date": "September 10, 2025",
+                    "link": "https://www.mit.edu/admissions/visit/"
+                }
+            ],
+            "classProfile": {
+                "numberEnrolled": 71,
+                "averageAge": 28,
+                "averageWorkExperience": 5.4
+            }
+        },
+        {
+            "id": 4,
+            "name": "Rotman (Toronto)",
+            "country": "Canada",
+            "logo": "https://www.mba.today/images/logo/school/square/university-of-toronto-rotman-school-of-management-554.png",
+            "course": "Full Time MBA",
+            "duration": "2 years",
+            "fee": "$50,528 per year",
+            "avgSalary": "$121,889",
+            "avgGMAT": 635,
+            "rank": 39,
+            "feeWaiverAvailable": true,
+            "applicationRequirements": [
+                "Completed application form",
+                "Official transcripts",
+                "Letters of recommendation",
+                "Personal statement"
+            ],
+            "applicationDeadline": "September 25, 2024 (Round 1)",
+            "ieltsRequirement": 6.5,
+            "scholarshipOpportunities": [
+                "Need-based scholarships"
+            ],
+            "upcomingEvents": [
+                {
+                    "name": "Webinar on Environmental Careers",
+                    "date": "October 5, 2025",
+                    "link": "https://environment.berkeley.edu/events/"
+                }
+            ],
+            "classProfile": {
+                "numberEnrolled": 271,
+                "averageAge": 28,
+                "averageWorkExperience": 5
+            }
+        },
+        {
+            "id": 5,
+            "name": "Michigan (Ross)",
+            "country": "United States",
+            "logo": "https://rossweb.bus.umich.edu/style-guide/wp-content/uploads/sites/16/2024/02/mross_bug2_rgb_rev_maize-blue-1.jpg",
+            "course": "Full Time MBA",
+            "duration": "2 years",
+            "fee": "$60,000 per year",
+            "avgSalary": "$140,000",
+            "avgGMAT": 730,
+            "rank": 22,
+            "feeWaiverAvailable": true,
+            "applicationRequirements": [
+                "Completed application form",
+                "Official transcripts",
+                "Letters of recommendation",
+                "Personal statement",
+                "GMAT or GRE scores"
+            ],
+            "applicationDeadline": "December 1, 2025 (Round 1)",
+            "ieltsRequirement": 7.0,
+            "scholarshipOpportunities": [
+                "Need-based scholarships",
+                "Merit-based scholarships"
+            ],
+            "upcomingEvents": [
+                {
+                    "name": "Virtual Open House",
+                    "date": "November 15, 2025",
+                    "link": "https://www.haas.berkeley.edu/mba/admissions/events/"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Indiana (Kelley)",
+            "country": "United States",
+            "logo": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Kelley_School_of_Business_Logo.png",
+            "course": "Full Time MBA",
+            "duration": "2 years",
+            "fee": "$65,000 per year",
+            "avgSalary": "$135,000",
+            "avgGMAT": 720,
+            "rank": 44,
+            "feeWaiverAvailable": true,
+            "applicationRequirements": [
+                "Completed application form",
+                "Official transcripts",
+                "Letters of recommendation",
+                "Personal statement",
+                "GMAT or GRE scores"
+            ],
+            "applicationDeadline": "February 1, 2026 (Round 3)",
+            "ieltsRequirement": 7.0,
+            "scholarshipOpportunities": [
+                "Need-based scholarships",
+                "Merit-based scholarships"
+            ],
+            "upcomingEvents": [
+                {
+                    "name": "Information Session",
+                    "date": "December 1, 2025",
+                    "link": "https://www.darden.virginia.edu/admissions/events/"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Emory (Goizueta)",
+            "country": "United States",
+            "logo": "https://www.mba.today/images/logo/school/square/emory-university-goizueta-business-school-1141.png",
+            "course": "Full Time MBA",
+            "duration": "2 years",
+            "fee": "$70,000 per year",
+            "avgSalary": "$150,000",
+            "avgGMAT": 740,
+            "rank": 59,
+            "feeWaiverAvailable": true,
+            "applicationRequirements": [
+                "Completed application form",
+                "Official transcripts",
+                "Letters of recommendation",
+                "Personal statement",
+                "GMAT or GRE scores"
+            ],
+            "applicationDeadline": "March 1, 2026 (Round 4)",
+            "ieltsRequirement": 7.5,
+            "scholarshipOpportunities": [
+                "Need-based scholarships",
+                "Merit-based scholarships"
+            ],
+            "upcomingEvents": [
+                {
+                    "name": "Campus Visit Day",
+                    "date": "January 15, 2026",
+                    "link": "https://www.wharton.upenn.edu/mba-admissions/events/"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "McGill (Desautels)",
+            "country": "Canada",
+            "logo": "https://media.licdn.com/dms/image/v2/C560BAQGLRyJFo06_yQ/company-logo_200_200/company-logo_200_200/0/1630664224707/desautels_capital_management_logo?e=2147483647&v=beta&t=hQ8rxjoNkOhViJCi4tJSRzLyAMQcLhWMLKpBTJqngy0",
+            "course": "Full Time MBA",
+            "duration": "2 years",
+            "fee": "$75,000 per year",
+            "avgSalary": "$160,000",
+            "avgGMAT": 750,
+            "rank": 66,
+            "feeWaiverAvailable": false,
+            "applicationRequirements": [
+                "Completed application form",
+                "Official transcripts",
+                "Letters of recommendation",
+                "Personal statement",
+                "GMAT or GRE scores"
+            ],
+            "applicationDeadline": "April 1, 2026 (Round 5)",
+            "ieltsRequirement": 7.0,
+            "scholarshipOpportunities": [
+                "Need-based scholarships",
+                "Merit-based scholarships"
+            ],
+            "upcomingEvents": [
+                {
+                    "name": "Virtual Q&A Session",
+                    "date": "February 15, 2026",
+                    "link": "https://www.kellogg.northwestern.edu/admissions/events/"
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Boston (Questrom)",
+            "country": "United States",
+            "logo": "https://questromworld.bu.edu/msba/wp-content/uploads/sites/45/2021/11/Questrom-1-1-1.png",
+            "course": "Full-Time MBA+ MSDT",
+            "duration": "2 years",
+            "fee": "$88,761 per year",
+            "avgSalary": "$118,566",
+            "avgGMAT": 645,
+            "rank": 35,
+            "feeWaiverAvailable": false,
+            "applicationRequirements": [
+                "Completed application form",
+                "Official transcripts",
+                "Letters of recommendation",
+                "Personal statement",
+                "GMAT or GRE scores"
+            ],
+            "applicationDeadline": "May 1, 2026 (Round 6)",
+            "ieltsRequirement": 7.0,
+            "scholarshipOpportunities": [
+                "Need-based scholarships",
+                "Merit-based scholarships"
+            ],
+            "upcomingEvents": [
+                {
+                    "name": "Admissions Webinar",
+                    "date": "March 10, 2026",
+                    "link": "https://www.columbia.edu/admissions/events/"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Frankfurt School",
+            "country": "Germany",
+            "logo": "https://questromworld.bu.edu/msba/wp-content/uploads/sites/45/2021/11/Questrom-1-1-1.png",
+            "course": "Full-Time MBA",
+            "duration": "1 years",
+            "fee": "$88,761 per year",
+            "avgSalary": "$118,566",
+            "avgGMAT": 645,
+            "rank": 40,
+            "feeWaiverAvailable": false,
+            "applicationRequirements": [
+                "Completed application form",
+                "Official transcripts",
+                "Letters of recommendation",
+                "Personal statement",
+                "GMAT or GRE scores"
+            ],
+            "applicationDeadline": "May 1, 2026 (Round 6)",
+            "ieltsRequirement": 7.0,
+            "scholarshipOpportunities": [
+                "Need-based scholarships",
+                "Merit-based scholarships"
+            ],
+            "upcomingEvents": [
+                {
+                    "name": "Admissions Webinar",
+                    "date": "March 10, 2026",
+                    "link": "https://www.columbia.edu/admissions/events/"
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Mannheim Business School",
+            "country": "Germany",
+            "logo": "https://questromworld.bu.edu/msba/wp-content/uploads/sites/45/2021/11/Questrom-1-1-1.png",
+            "course": "Full-Time MBA",
+            "duration": "1 years",
+            "fee": "$88,761 per year",
+            "avgSalary": "$118,566",
+            "avgGMAT": 645,
+            "rank": 47,
+            "feeWaiverAvailable": false,
+            "applicationRequirements": [
+                "Completed application form",
+                "Official transcripts",
+                "Letters of recommendation",
+                "Personal statement",
+                "GMAT or GRE scores"
+            ],
+            "applicationDeadline": "May 1, 2026 (Round 6)",
+            "ieltsRequirement": 7.0,
+            "scholarshipOpportunities": [
+                "Need-based scholarships",
+                "Merit-based scholarships"
+            ],
+            "upcomingEvents": [
+                {
+                    "name": "Admissions Webinar",
+                    "date": "March 10, 2026",
+                    "link": "https://www.columbia.edu/admissions/events/"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Texas (McCombs)",
+            "country": "United States",
+            "logo": "https://questromworld.bu.edu/msba/wp-content/uploads/sites/45/2021/11/Questrom-1-1-1.png",
+            "course": "Full-Time MBA",
+            "duration": "2 years",
+            "fee": "$88,761 per year",
+            "avgSalary": "$118,566",
+            "avgGMAT": 645,
+            "rank": 37,
+            "feeWaiverAvailable": false,
+            "applicationRequirements": [
+                "Completed application form",
+                "Official transcripts",
+                "Letters of recommendation",
+                "Personal statement",
+                "GMAT or GRE scores"
+            ],
+            "applicationDeadline": "May 1, 2026 (Round 6)",
+            "ieltsRequirement": 7.0,
+            "scholarshipOpportunities": [
+                "Need-based scholarships",
+                "Merit-based scholarships"
+            ],
+            "upcomingEvents": [
+                {
+                    "name": "Admissions Webinar",
+                    "date": "March 10, 2026",
+                    "link": "https://www.columbia.edu/admissions/events/"
+                }
+            ]
+        }
+    ]
+}

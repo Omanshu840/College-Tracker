@@ -1,0 +1,1016 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Main SCSS file for College Shortlist App */
+
+/* Modern Color Variables */
+$primary-blue: #6f9bdb;
+/* Darker for better contrast while maintaining pastel feel */
+$secondary-blue: #5d7a96;
+/* Darker for better contrast */
+$accent-color: #ff9a9a;
+/* Slightly more saturated for better contrast */
+$light-accent: #a3d0f5;
+/* Slightly darker for better contrast */
+$dark-blue: #3a5a8c;
+/* Darker for better text contrast */
+$light-gray: #f8f9fa;
+$medium-gray: #e9ecef;
+$dark-gray: #495057;
+$white: #ffffff;
+$gradient-start: #d0bdf4;
+$gradient-end: #b8e0d2;
+$shadow-color: rgba(111, 155, 219, 0.15);
+/* Updated to match new primary blue */
+$primary-color: $primary-blue;
+$secondary-color: $secondary-blue;
+$background-color: $light-gray;
+$text-color: $dark-blue;
+
+/* Glass Effect Mixins */
+@mixin glass-effect {
+  background: rgba(255, 255, 255, 0.45);
+  background: linear-gradient(135deg, rgba(208, 189, 244, 0.15), rgba(184, 224, 210, 0.15)), rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px 0 $shadow-color;
+}
+
+@mixin glass-card {
+  @include glass-effect;
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px 0 $shadow-color;
+  }
+}
+
+@mixin badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background-color: rgba($light-accent, 0.2);
+  color: $primary-blue;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  //   background-color: #f0f4f8; /* Base background color */
+  //   background-image: 
+  //     /* Large distinct lavender circle in top left */
+  //     radial-gradient(circle at 15% 15%, rgba(208, 189, 244, 0.8) 0%, rgba(208, 189, 244, 0) 35%),
+  //     /* Distinct mint green circle in bottom right */
+  //     radial-gradient(circle at 85% 85%, rgba(184, 224, 210, 0.7) 0%, rgba(184, 224, 210, 0) 40%),
+  //     /* Distinct pink accent circle in top right */
+  //     radial-gradient(circle at 85% 15%, rgba(255, 154, 154, 0.6) 0%, rgba(255, 154, 154, 0) 30%),
+  //     /* Distinct light blue circle in bottom left */
+  //     radial-gradient(circle at 25% 80%, rgba(163, 208, 245, 0.6) 0%, rgba(163, 208, 245, 0) 35%),
+  //     /* Medium-sized circular shapes */
+  //     radial-gradient(circle at 65% 25%, rgba(255, 154, 154, 0.4) 0%, rgba(255, 154, 154, 0) 20%),
+  //     radial-gradient(circle at 40% 60%, rgba(163, 208, 245, 0.4) 0%, rgba(163, 208, 245, 0) 25%),
+  //     /* Small circular shapes */
+  //     radial-gradient(circle at 30% 40%, rgba(208, 189, 244, 0.3) 0%, rgba(208, 189, 244, 0) 15%),
+  //     radial-gradient(circle at 70% 70%, rgba(163, 208, 245, 0.3) 0%, rgba(163, 208, 245, 0) 20%),
+  //     /* Additional distinct circular shapes */
+  //     radial-gradient(circle at 20% 30%, rgba(255, 154, 154, 0.4) 0%, rgba(255, 154, 154, 0) 12%),
+  //     radial-gradient(circle at 80% 40%, rgba(184, 224, 210, 0.5) 0%, rgba(184, 224, 210, 0) 18%),
+  //     radial-gradient(circle at 45% 85%, rgba(208, 189, 244, 0.4) 0%, rgba(208, 189, 244, 0) 22%),
+  //     /* Soft circular shape in center */
+  //     radial-gradient(circle at 50% 50%, rgba(208, 189, 244, 0.25) 0%, rgba(208, 189, 244, 0) 60%);
+  background-image: url('../assets/background-6.png');
+  //   background-size: auto;
+  background-attachment: fixed;
+  background-size: cover;
+  color: $text-color;
+  min-height: 100vh;
+  line-height: 1.6;
+  position: relative;
+
+  /* Floating circular elements */
+  &:before,
+  &:after {
+    content: '';
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  &:before {
+    top: -200px;
+    right: -200px;
+    background: radial-gradient(circle, rgba(208, 189, 244, 0.4) 0%, rgba(208, 189, 244, 0) 70%);
+  }
+
+  &:after {
+    bottom: -200px;
+    left: -200px;
+    background: radial-gradient(circle, rgba(184, 224, 210, 0.4) 0%, rgba(184, 224, 210, 0) 70%);
+  }
+}
+
+html {
+  font-size: 15px;
+}
+
+/* Scale down font size on smaller screens */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+.country-filter {
+  padding-top: 10px;
+  display: flex;
+  column-gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+  .country-active {
+    background: linear-gradient(135deg, #6f9bdb, #5d7a96);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 10px 30px rgba($primary-blue, 0.12);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 10px 10px;
+  }
+
+  .country {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 10px 30px rgba($primary-blue, 0.12);
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 10px 10px;
+
+    &:hover {
+      transform: scale(0.95);
+      box-shadow: 0 15px 35px rgba($primary-blue, 0.18);
+      cursor: pointer;
+    }
+  }
+}
+
+/* Abstract Circular Shapes */
+.abstract-circle {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+
+  &.circle-1 {
+    width: 150px;
+    height: 150px;
+    top: 15%;
+    left: 10%;
+    background: radial-gradient(circle, rgba(255, 154, 154, 0.5) 0%, rgba(255, 154, 154, 0) 70%);
+    animation: float 8s ease-in-out infinite;
+  }
+
+  &.circle-2 {
+    width: 200px;
+    height: 200px;
+    top: 60%;
+    right: 15%;
+    background: radial-gradient(circle, rgba(163, 208, 245, 0.5) 0%, rgba(163, 208, 245, 0) 70%);
+    animation: float 12s ease-in-out infinite;
+  }
+
+  &.circle-3 {
+    width: 120px;
+    height: 120px;
+    bottom: 20%;
+    left: 20%;
+    background: radial-gradient(circle, rgba(208, 189, 244, 0.5) 0%, rgba(208, 189, 244, 0) 70%);
+    animation: float 10s ease-in-out infinite;
+  }
+
+  &.circle-4 {
+    width: 180px;
+    height: 180px;
+    top: 30%;
+    right: 25%;
+    background: radial-gradient(circle, rgba(184, 224, 210, 0.5) 0%, rgba(184, 224, 210, 0) 70%);
+    animation: float 15s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+
+  50% {
+    transform: translateY(-10px) translateX(5px);
+  }
+
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+.container {
+  padding: 30px 20px;
+  max-width: 1200px;
+}
+
+/* Header Styles */
+.app-header {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px 25px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px 0 $shadow-color;
+
+  .header-left {
+    h1 {
+      color: $primary-blue;
+      margin: 0;
+      font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: -0.5px;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 40px;
+        height: 3px;
+        background-color: $accent-color;
+        border-radius: 2px;
+      }
+    }
+
+    .header-tagline {
+      margin: 8px 0 0;
+      color: $dark-gray;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+  }
+
+  .header-right {
+    .header-stats {
+      display: flex;
+
+      .stat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba($light-accent, 0.15);
+        padding: 8px 16px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
+        .stat-number {
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: $primary-blue;
+          line-height: 1;
+        }
+
+        .stat-label {
+          font-size: 0.75rem;
+          color: $dark-gray;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+      }
+    }
+  }
+}
+
+/* College Card Styles */
+.college-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 0;
+  border: none;
+  box-shadow: 0 10px 30px rgba($primary-blue, 0.12);
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba($primary-blue, 0.18);
+  }
+
+  .card-header-section {
+    position: relative;
+    padding: 20px 20px 0;
+
+    .rank-badge {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: linear-gradient(135deg, $accent-color, darken($accent-color, 15%));
+      color: white;
+      font-weight: 700;
+      font-size: 0.9rem;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba($accent-color, 0.3);
+      z-index: 2;
+    }
+  }
+
+  .college-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    padding: 8px;
+    background-color: rgba($white, 0.7);
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(111, 155, 219, 0.15);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .college-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 20px 15px;
+    color: $dark-blue;
+    letter-spacing: -0.5px;
+    line-height: 1.3;
+    text-align: center;
+    padding-bottom: 10px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 3px;
+      background: linear-gradient(to right, $accent-color, $light-accent);
+      border-radius: 2px;
+    }
+  }
+
+  .card-content {
+    padding: 0 20px;
+  }
+
+  .college-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 15px;
+
+    .info-item {
+      display: flex;
+      flex-direction: column;
+
+      .label {
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: $dark-gray;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 4px;
+      }
+
+      .value {
+        font-weight: 600;
+        color: $primary-blue;
+        font-size: 0.9rem;
+
+        &.highlight {
+          color: $accent-color;
+          font-weight: 700;
+        }
+      }
+
+      .waiver-badge {
+        font-size: 0.75rem;
+        padding: 4px 8px;
+        border-radius: 12px;
+        font-weight: 600;
+        display: inline-block;
+      }
+    }
+  }
+
+  .application-deadline {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: rgba($accent-color, 0.08);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    .badge {
+      margin-bottom: 5px;
+      background-color: rgba($white, 0.9) !important;
+      color: $accent-color !important;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 20px;
+    }
+
+    span:not(.badge) {
+      font-weight: 600;
+      color: $dark-blue;
+      font-size: 0.9rem;
+    }
+  }
+
+  .view-details {
+    margin-top: auto;
+    width: 100%;
+    background: linear-gradient(135deg, $primary-blue, $secondary-blue);
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 0 0 20px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: none;
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: 0.5s;
+    }
+
+    &:hover {
+      background: linear-gradient(135deg, $secondary-blue, darken($secondary-blue, 10%));
+
+      &:before {
+        left: 100%;
+      }
+    }
+
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+}
+
+/* College Detail Page Styles */
+.college-detail {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 24px;
+  padding: 40px;
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px 0 $shadow-color;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(to right, $accent-color, $light-accent);
+  }
+
+  .college-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+
+    .college-logo {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      margin-right: 30px;
+      padding: 15px;
+      background-color: rgba($white, 0.7);
+      border-radius: 50%;
+      box-shadow: 0 8px 20px rgba(111, 155, 219, 0.2);
+    }
+
+    .college-title {
+      h1 {
+        margin: 0 0 8px 0;
+        font-weight: 700;
+        font-size: 2.2rem;
+        color: $dark-blue;
+        letter-spacing: -0.5px;
+        line-height: 1.2;
+      }
+
+      p {
+        margin: 0;
+        color: $primary-blue;
+        font-weight: 600;
+        font-size: 1.1rem;
+        @include badge;
+        padding: 6px 16px;
+      }
+    }
+  }
+
+  .college-stats {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    background-color: rgba($white, 0.3);
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(111, 155, 219, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    .stat-item {
+      flex: 1 0 30%;
+      margin-bottom: 10px;
+      padding: 0 15px;
+      position: relative;
+
+      &:not(:last-child):after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 10%;
+        height: 80%;
+        width: 1px;
+        background-color: $medium-gray;
+      }
+
+      .stat-label {
+        font-size: 0.85rem;
+        color: $dark-gray;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+      }
+
+      .stat-value {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: $primary-blue;
+
+        .deadline-badge {
+          font-size: 0.9rem;
+          padding: 6px 12px;
+          background-color: rgba($accent-color, 0.9) !important;
+          border: none;
+          box-shadow: 0 2px 8px rgba($accent-color, 0.3);
+        }
+      }
+    }
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 35px 0 20px;
+    color: $dark-blue;
+    position: relative;
+    padding-left: 15px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 5px;
+      background: linear-gradient(to bottom, $accent-color, $light-accent);
+      border-radius: 3px;
+      box-shadow: 0 0 8px rgba($accent-color, 0.3);
+    }
+  }
+}
+
+.requirements-list,
+.scholarships-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+
+  li {
+    margin-bottom: 8px;
+    position: relative;
+    padding: 12px 15px 12px 38px;
+    background-color: rgba($white, 0.3);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    border-left: 2px solid rgba($light-accent, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    &:before {
+      content: "✓";
+      color: $accent-color;
+      font-size: 1rem;
+      position: absolute;
+      left: 12px;
+      top: 12px;
+      font-weight: bold;
+    }
+
+    &:hover {
+      background-color: rgba($white, 0.8);
+      transform: translateX(5px);
+      border-left: 2px solid $accent-color;
+      box-shadow: 0 3px 10px rgba(111, 155, 219, 0.12);
+    }
+  }
+}
+
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+
+  .event-item {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 20px;
+    margin-bottom: 0;
+    padding: 20px;
+    border-left: 4px solid $accent-color;
+    box-shadow: 0 10px 30px 0 $shadow-color;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px 0 $shadow-color;
+    }
+
+    .event-name {
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+      color: $dark-blue;
+    }
+
+    .event-date {
+      color: $primary-blue;
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      background-color: rgba($light-accent, 0.1);
+      padding: 6px 12px;
+      border-radius: 20px;
+      width: fit-content;
+
+      &:before {
+        content: "📅";
+        margin-right: 8px;
+      }
+    }
+
+    .event-link {
+      color: $white;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      background-color: $primary-blue;
+      padding: 8px 16px;
+      border-radius: 20px;
+      display: inline-block;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: 0.5s;
+      }
+
+      &:hover {
+        background-color: $secondary-blue;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba($primary-blue, 0.3);
+
+        &:after {
+          left: 100%;
+        }
+      }
+    }
+  }
+}
+
+.back-button {
+  background-color: $primary-blue;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin-top: 30px;
+  box-shadow: 0 4px 12px rgba($primary-blue, 0.25);
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "←";
+    margin-right: 8px;
+    font-weight: bold;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+  }
+
+  &:hover {
+    background-color: $secondary-blue;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba($primary-blue, 0.35);
+
+    &:after {
+      left: 100%;
+    }
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+/* Home Page Styles */
+.page-intro {
+  margin-bottom: 30px;
+
+  .page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $dark-blue;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(to right, $accent-color, $light-accent);
+      border-radius: 2px;
+      box-shadow: 0 2px 5px rgba($accent-color, 0.3);
+    }
+  }
+
+  .page-description {
+    color: $dark-gray;
+    font-size: 1.05rem;
+    max-width: 600px;
+    line-height: 1.6;
+  }
+
+  .filter-badges {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+
+    .filter-badge {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 20px;
+      background-color: rgba($light-accent, 0.15);
+      color: $secondary-blue;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(111, 155, 219, 0.15);
+        background-color: rgba($light-accent, 0.25);
+      }
+
+      &.active {
+        background-color: $primary-blue;
+        color: white;
+        border-color: $primary-blue;
+      }
+    }
+  }
+}
+
+.college-grid {
+  margin-top: 20px;
+}
+
+/* Not Found Page */
+.not-found-container {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 24px;
+  padding: 40px;
+  text-align: center;
+  margin-top: 50px;
+  border-top: 4px solid $accent-color;
+  box-shadow: 0 10px 30px 0 $shadow-color;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $dark-blue;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: $accent-color;
+      border-radius: 2px;
+    }
+  }
+
+  p {
+    color: $dark-gray;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .college-detail {
+    padding: 30px;
+
+    .college-stats {
+      .stat-item {
+        flex: 1 0 50%;
+
+        &:nth-child(2n):after {
+          display: none;
+        }
+      }
+    }
+
+    .requirements-list,
+    .scholarships-list,
+    .events-list {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .page-intro {
+    .filter-badges {
+      justify-content: flex-start;
+      margin-top: 20px;
+    }
+  }
+
+  .college-detail {
+    .college-header {
+      flex-direction: column;
+      text-align: center;
+
+      .college-logo {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+
+    .college-stats {
+      padding: 20px 15px;
+
+      .stat-item {
+        flex: 1 0 50%;
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .app-header {
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .college-detail {
+    padding: 25px 20px;
+
+    .college-stats {
+      .stat-item {
+        flex: 1 0 100%;
+      }
+    }
+
+    .requirements-list,
+    .scholarships-list,
+    .events-list {
+      grid-template-columns: 1fr;
+    }
+
+    .section-title {
+      font-size: 1.3rem;
+    }
+  }
+
+  .college-card {
+    .college-name {
+      font-size: 1.2rem;
+    }
+  }
+}
