@@ -9,23 +9,44 @@ const Home = () => {
 
     useEffect(() => {
         let colleges = collegesData.colleges;
-        if(countryFilter!=="All") {
-            colleges = colleges.filter(college => college.country === countryFilter);
+        if (countryFilter !== "All") {
+            colleges = colleges.filter(
+                (college) => college.country === countryFilter
+            );
         }
         colleges.sort((a, b) => a.rank - b.rank);
         setColleges(colleges);
     }, [countryFilter]);
 
-    const countries = ["All", "United States", "Canada", "Germany"];
+    const countries = [
+        "All",
+        "United States",
+        "Canada",
+        "Germany",
+        "Singapore",
+    ];
 
     return (
         <Container>
             <div className="country-filter">
-                {countries.map(country => (
-                    <div className={`${countryFilter===country ? 'country-active': 'country'}`} onClick={() => setCountryFilter(country)}>
+                {countries.map((country) => (
+                    <div
+                        className={`${
+                            countryFilter === country
+                                ? "country-active"
+                                : "country"
+                        }`}
+                        onClick={() => setCountryFilter(country)}
+                    >
                         {country}
                     </div>
                 ))}
+            </div>
+            <div className="stat">
+                <span className="stat-number">
+                    {colleges.length}
+                </span>
+                <span className="stat-label">Schools</span>
             </div>
             <Row className="college-grid">
                 {colleges.map((college) => (

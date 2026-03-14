@@ -14,14 +14,6 @@ const Header = () => {
                                 <h1>College Shortlist</h1>
                             </Link>
                         </div>
-                        <div className="header-right">
-                            <div className="header-stats">
-                                <div className="stat">
-                                    <span className="stat-number">{collegesData.colleges.length}</span>
-                                    <span className="stat-label">Schools</span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </Col>
             </Row>

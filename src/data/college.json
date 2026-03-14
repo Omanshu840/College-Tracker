@@ -161,9 +161,9 @@
             "logo": "https://rossweb.bus.umich.edu/style-guide/wp-content/uploads/sites/16/2024/02/mross_bug2_rgb_rev_maize-blue-1.jpg",
             "course": "Full Time MBA",
             "duration": "2 years",
-            "fee": "$60,000 per year",
-            "avgSalary": "$140,000",
-            "avgGMAT": 730,
+            "fee": "$78,030 per year",
+            "avgSalary": "$170,000",
+            "avgGMAT": 665,
             "rank": 22,
             "feeWaiverAvailable": true,
             "applicationRequirements": [
@@ -194,9 +194,9 @@
             "logo": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Kelley_School_of_Business_Logo.png",
             "course": "Full Time MBA",
             "duration": "2 years",
-            "fee": "$65,000 per year",
-            "avgSalary": "$135,000",
-            "avgGMAT": 720,
+            "fee": "$55,695 per year",
+            "avgSalary": "$167,000",
+            "avgGMAT": 645,
             "rank": 44,
             "feeWaiverAvailable": true,
             "applicationRequirements": [
@@ -323,12 +323,12 @@
             "id": 10,
             "name": "Frankfurt School",
             "country": "Germany",
-            "logo": "https://questromworld.bu.edu/msba/wp-content/uploads/sites/45/2021/11/Questrom-1-1-1.png",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqNm-ALpEHOcDVn0l2qHVDE3iuwKIoPm_KuQ&s",
             "course": "Full-Time MBA",
-            "duration": "1 years",
-            "fee": "$88,761 per year",
-            "avgSalary": "$118,566",
-            "avgGMAT": 645,
+            "duration": "1 year",
+            "fee": "$49,230.30 per year",
+            "avgSalary": "$122,999",
+            "avgGMAT": 605,
             "rank": 40,
             "feeWaiverAvailable": false,
             "applicationRequirements": [
@@ -356,12 +356,12 @@
             "id": 11,
             "name": "Mannheim Business School",
             "country": "Germany",
-            "logo": "https://questromworld.bu.edu/msba/wp-content/uploads/sites/45/2021/11/Questrom-1-1-1.png",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOFWx-_LUnrrCpHRzR0Fns_iPXP8AVgHy38Q&s",
             "course": "Full-Time MBA",
             "duration": "1 years",
-            "fee": "$88,761 per year",
-            "avgSalary": "$118,566",
-            "avgGMAT": 645,
+            "fee": "$52,746.75 per year",
+            "avgSalary": "$110,264",
+            "avgGMAT": 605,
             "rank": 47,
             "feeWaiverAvailable": false,
             "applicationRequirements": [
@@ -389,12 +389,12 @@
             "id": 12,
             "name": "Texas (McCombs)",
             "country": "United States",
-            "logo": "https://questromworld.bu.edu/msba/wp-content/uploads/sites/45/2021/11/Questrom-1-1-1.png",
+            "logo": "https://play-lh.googleusercontent.com/cQgx3CkrgfE2chfDOyphVIrPmxzwSan3Pm2-TLzLLDgFMnkjIrs0ynoLiMRgyN88FuE",
             "course": "Full-Time MBA",
             "duration": "2 years",
-            "fee": "$88,761 per year",
-            "avgSalary": "$118,566",
-            "avgGMAT": 645,
+            "fee": "$59,684 per year",
+            "avgSalary": "$151,178",
+            "avgGMAT": 655,
             "rank": 37,
             "feeWaiverAvailable": false,
             "applicationRequirements": [
@@ -417,6 +417,108 @@
                     "link": "https://www.columbia.edu/admissions/events/"
                 }
             ]
+        },
+        {
+
+            "id": 13,
+            "name": "NUS Business School",
+            "country": "Singapore",
+            "logo": "https://www.nus.edu.sg/images/default-source/identity-images/nus-logo-black-vertical.jpg",
+            "course": "Full Time MBA",
+            "duration": "17 Months",
+            "fee": "$77,852.87",
+            "avgSalary": "$77,109",
+            "avgGMAT": 615,
+            "rank": 25,
+            "feeWaiverAvailable": false,
+            "applicationRequirements": [
+                "Completed application form",
+                "Official transcripts",
+                "Letters of recommendation",
+                "Personal statement"
+            ],
+            "applicationDeadline": "September 25, 2024 (Round 1)",
+            "ieltsRequirement": 6.5,
+            "scholarshipOpportunities": [
+                "Need-based scholarships"
+            ],
+            "upcomingEvents": [
+                
+            ],
+            "classProfile": {
+                "numberEnrolled": 120,
+                "averageAge": 29,
+                "averageWorkExperience": 6,
+                "internationalMale": 45
+            }
+        },
+        {
+
+            "id": 14,
+            "name": "Nanyang Business School",
+            "country": "Singapore",
+            "logo": "https://www.renewnablemalawi.org/wp-content/uploads/2017/06/Nanyang-Business-School-Singapore-Logo.jpg",
+            "course": "Full Time MBA",
+            "duration": "18 Months",
+            "fee": "$64,187.37",
+            "avgSalary": "$77,109",
+            "avgGMAT": 615,
+            "rank": 36,
+            "feeWaiverAvailable": false,
+            "applicationRequirements": [
+                "Completed application form",
+                "Official transcripts",
+                "Letters of recommendation",
+                "Personal statement"
+            ],
+            "applicationDeadline": "September 25, 2024 (Round 1)",
+            "ieltsRequirement": 6.5,
+            "scholarshipOpportunities": [
+                "Need-based scholarships"
+            ],
+            "upcomingEvents": [
+                
+            ],
+            "classProfile": {
+                "numberEnrolled": 75,
+                "averageAge": 28,
+                "averageWorkExperience": 6,
+                "internationalMale": 0
+            }
+        },
+        {
+
+            "id": 15,
+            "name": "Western (Ivey)",
+            "country": "Canada",
+            "logo": "https://www.renewnablemalawi.org/wp-content/uploads/2017/06/Nanyang-Business-School-Singapore-Logo.jpg",
+            "course": "Full Time MBA",
+            "duration": "18 Months",
+            "fee": "$64,187.37",
+            "avgSalary": "$77,109",
+            "avgGMAT": 615,
+            "rank": 36,
+            "feeWaiverAvailable": false,
+            "applicationRequirements": [
+                "Completed application form",
+                "Official transcripts",
+                "Letters of recommendation",
+                "Personal statement"
+            ],
+            "applicationDeadline": "September 25, 2024 (Round 1)",
+            "ieltsRequirement": 6.5,
+            "scholarshipOpportunities": [
+                "Need-based scholarships"
+            ],
+            "upcomingEvents": [
+                
+            ],
+            "classProfile": {
+                "numberEnrolled": 75,
+                "averageAge": 28,
+                "averageWorkExperience": 6,
+                "internationalMale": 0
+            }
         }
     ]
 }
